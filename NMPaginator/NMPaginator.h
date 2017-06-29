@@ -38,6 +38,7 @@ typedef enum {
 
 - (void)fetchFirstPage;
 - (void)fetchNextPage;
+- (void)fetchResultsWithPage:(NSInteger)page pageSize:(NSInteger)pageSize;
 
 // call these from subclass when you receive the results
 - (void)receivedResults:(NSArray *)results total:(NSInteger)total;
